@@ -1,0 +1,12 @@
+import hashlib
+
+def generate_hash(data):
+    sha256_hash = hashlib.sha256(data.encode()).hexdigest()
+    return sha256_hash
+
+# Example usage:
+input_data = "your_data_here"
+hash_value = generate_hash(input_data)
+
+print("Input data:", input_data)
+print("SHA-256 Hash:", hash_value)
